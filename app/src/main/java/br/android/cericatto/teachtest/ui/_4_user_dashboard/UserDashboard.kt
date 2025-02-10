@@ -1,4 +1,4 @@
-package br.android.cericatto.teachtest.ui._5_user_dashboard
+package br.android.cericatto.teachtest.ui._4_user_dashboard
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button

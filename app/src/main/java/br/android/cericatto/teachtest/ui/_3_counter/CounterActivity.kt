@@ -1,4 +1,4 @@
-package br.android.cericatto.teachtest.ui._3_android_art_gallery.compose
+package br.android.cericatto.teachtest.ui._3_counter
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import br.android.cericatto.teachtest.ui.theme.TeachTestTheme
 
-class SmartArtComposeActivity : ComponentActivity() {
+class CounterActivity : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		enableEdgeToEdge()
@@ -19,8 +19,7 @@ class SmartArtComposeActivity : ComponentActivity() {
 				Scaffold(
 					modifier = Modifier.fillMaxSize()
 				) { innerPadding ->
-					SmartArtGallery(
-						painting = Painting(),
+					Counter(
 						modifier = Modifier.padding(innerPadding)
 							.fillMaxSize()
 					)

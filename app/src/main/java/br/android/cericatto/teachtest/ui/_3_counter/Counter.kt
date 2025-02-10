@@ -1,4 +1,4 @@
-package br.android.cericatto.teachtest.ui._4_counter
+package br.android.cericatto.teachtest.ui._3_counter
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
