@@ -15,10 +15,6 @@ class TraditionalActivity : AppCompatActivity() {
 		nameTextView = findViewById(R.id.nameTextView)
 
 		// Update UI manually
-		val userComposeViewModel = TraditionalViewModel()
-		userComposeViewModel.userName.observe(this) { newName ->
-			nameTextView.text = newName
-		}
-		userComposeViewModel.updateUserName("Billy")
+		nameTextView.text = "Billy"
 	}
 }

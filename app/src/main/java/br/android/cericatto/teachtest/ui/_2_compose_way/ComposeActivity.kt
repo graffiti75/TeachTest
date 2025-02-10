@@ -13,13 +13,11 @@ import br.android.cericatto.teachtest.ui.theme.TeachTestTheme
 class ComposeActivity : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		val viewModel = ComposeViewModel()
 		enableEdgeToEdge()
 		setContent {
 			TeachTestTheme {
 				Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 					UserName(
-						viewModel = viewModel,
 						modifier = Modifier.padding(innerPadding)
 					)
 				}

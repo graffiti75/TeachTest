@@ -26,9 +26,7 @@ fun UserDashboard(user: User) {
 
 		// This only recomposes when isEditing changes
 		Button(
-			onClick = {
-				isEditing = !isEditing
-			}
+			onClick = { isEditing = !isEditing }
 		) {
 			Text(if (isEditing) "Save" else "Edit")
 		}

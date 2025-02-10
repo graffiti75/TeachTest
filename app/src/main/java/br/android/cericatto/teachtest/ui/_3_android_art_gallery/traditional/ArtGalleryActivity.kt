@@ -22,11 +22,7 @@ class ArtGalleryActivity : AppCompatActivity() {
 		descriptionView = findViewById(R.id.descriptionTextView)
 
 		// Manually updating each view (like physically changing each item).
-		val viewModel = ArtGalleryViewModel()
-		viewModel.painting.observe(this) { newPainting ->
-			paintingView.setImageDrawable(newPainting)
-		}
 		val drawable: Drawable? = ContextCompat.getDrawable(this, R.drawable.android)
-		viewModel.updatePainting(drawable!!)
+		paintingView.setImageDrawable(drawable)
 	}
 }
