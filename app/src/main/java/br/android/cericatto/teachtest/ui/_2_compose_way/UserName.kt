@@ -21,17 +21,17 @@ import androidx.compose.ui.unit.sp
 fun UserName(
 	modifier : Modifier = Modifier
 ) {
-	var userName by remember { mutableStateOf("Doug") }
+	var userName by remember { mutableStateOf("Abraham") }
 	Column(
 		verticalArrangement = Arrangement.Center,
 		horizontalAlignment = Alignment.CenterHorizontally,
 		modifier = modifier.fillMaxSize()
-			.background(Color.Black)
+			.background(Color.White)
 	) {
 		Text(
 			style = TextStyle(
-				fontSize = 40.sp,
-				color = Color.White
+				fontSize = 80.sp,
+				color = Color.Black
 			),
 			text = userName
 		)

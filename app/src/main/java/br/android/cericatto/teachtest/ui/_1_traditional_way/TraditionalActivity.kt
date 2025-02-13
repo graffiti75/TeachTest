@@ -15,6 +15,6 @@ class TraditionalActivity : AppCompatActivity() {
 		nameTextView = findViewById(R.id.nameTextView)
 
 		// Update UI manually
-		nameTextView.text = "Billy"
+		nameTextView.text = "Bill"
 	}
 }

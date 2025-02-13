@@ -24,7 +24,8 @@ fun Counter(
 	modifier : Modifier = Modifier
 ) {
 	// Define state using remember
-	var count by remember { mutableStateOf(0) }
+	var count = 0
+	println("count: $count")
 
 	Column(
 		modifier = modifier.fillMaxSize(),
@@ -57,3 +58,5 @@ fun Counter(
 private fun CounterComposablePreview() {
 	Counter()
 }
+
+// var count by remember { mutableStateOf(0) }
